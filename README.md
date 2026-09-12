@@ -1,2 +1,2 @@
-# netpf
-netpf is a router that uses the powerful pf
+# NetPF
+NetPF - a focused, declarative BSD network operating system powered by PF.
