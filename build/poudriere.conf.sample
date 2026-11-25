@@ -1,0 +1,10 @@
+# Copy to /usr/local/etc/poudriere.conf on the FreeBSD build host and set ZPOOL
+# to an existing ZFS pool with enough free space for the jail and package builds.
+BASEFS=/usr/local/poudriere
+POUDRIERE_DATA=/usr/local/poudriere/data
+DISTFILES_CACHE=/usr/local/poudriere/distfiles
+ZPOOL=zroot
+
+# Keep build jails and package artifacts on the configured ZFS pool.
+FREEBSD_HOST=https://download.freebsd.org
+ALLOW_MAKE_JOBS=yes

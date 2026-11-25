@@ -18,6 +18,10 @@ coverage.*
 *.coverprofile
 profile.cov
 
+# NetPF image build outputs and temporary state
+/.build/
+/out/
+
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
@@ -482,3 +486,8 @@ zig-pkg/
 build/
 build-*/
 docgen_tmp/
+
+# NetPF image builder files (overrides the global CMake/build ignore rules)
+!/Makefile
+!/build/
+!/build/**
